@@ -23,18 +23,20 @@ public class Investment
 	
 	double getCurrentValue(int howManyMonths)
 	{
-			
+		int a =0;
 			double workingNum = 0;
 			int priceAtTime = howManyMonths / theContributions.get(0).numContributions;
 			for(int i = 0; i <= (howManyMonths-1) / priceAtTime; i +=1)
 			{
 				System.out.println("running top part");
-				//adds contribution
+				
 				//adds contribution numContributons times
 				workingNum += theContributions.get(0).amount;
 				for(int k = 0; k <= priceAtTime-1; k+=1 )
 				{
 					//System.out.println("running mid part");
+					
+					
 					workingNum = workingNum * 1.0067;
 					
 					
